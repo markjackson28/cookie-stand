@@ -2,6 +2,7 @@
 
 // console.log('Hello World');
 
+// This is the window into the DOM
 const seattleList = document.getElementById('seattle-list');
 const tokyoList = document.getElementById('tokyo-list');
 const dubaiList = document.getElementById('dubai-list');
@@ -38,15 +39,15 @@ let seattle = {
       hoursLi.textContent = `${hours[i]}: ${this.getrandomCookiesPerHour()} cookies`;
       seattleList.appendChild(hoursLi);
     }
-    let totalList = document.createElement('li');
-    totalList.textContent = `Total: ${this.dailyTotal} cookies`
-    seattleList.appendChild(totalList);
+      let totalList = document.createElement('li');
+      totalList.textContent = `Total: ${this.dailyTotal} cookies`
+      seattleList.appendChild(totalList);
   },
 };
 
-  seattle.getArrayPush();
-  seattle.totalSales(); 
-  seattle.renderSales();
+seattle.getArrayPush();
+seattle.totalSales(); 
+seattle.renderSales();
   
   // seattle.getArrayPush();
   // seattle.totalSales();
@@ -63,20 +64,20 @@ let tokyo = {
   dailyTotal: 0,
   avgCookieSoldEachHourArray: [],
   getrandomCustomersPerHour: function () {
-  return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+    return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
   },
   getrandomCookiesPerHour: function () {
-  return Math.ceil(this.getrandomCustomersPerHour() * this.avg);
+    return Math.ceil(this.getrandomCustomersPerHour() * this.avg);
   },
   getArrayPush: function () {
-  for (let i = 0; i < hours.length; i++) {
-  this.avgCookieSoldEachHourArray.push(this.getrandomCookiesPerHour());
-  }
+    for (let i = 0; i < hours.length; i++) {
+      this.avgCookieSoldEachHourArray.push(this.getrandomCookiesPerHour());
+    }
   },
   totalSales: function () {
-  for (let i = 0; i < this.avgCookieSoldEachHourArray.length; i++) {
-    this.dailyTotal += this.avgCookieSoldEachHourArray[i];
-  }
+    for (let i = 0; i < this.avgCookieSoldEachHourArray.length; i++) {
+      this.dailyTotal += this.avgCookieSoldEachHourArray[i];
+    }
   },
   renderSales: function () { 
     for (let i = 0; i < hours.length; i++) {
@@ -87,7 +88,7 @@ let tokyo = {
       let totalList = document.createElement('li');
       totalList.textContent = `Total: ${this.dailyTotal} cookies`
       tokyoList.appendChild(totalList);
-},
+  },
 };
 
 tokyo.getArrayPush();
@@ -175,7 +176,6 @@ paris.totalSales();
 paris.renderSales();
 
 
-    
 let lima = {
   name: 'Lima',
   min: 2,
