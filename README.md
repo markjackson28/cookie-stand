@@ -6,7 +6,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Mark Thanadabouth
 
-## Collabs: Phil M, Matt M,
+### Collaborators: Phil M, Matt M,
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
