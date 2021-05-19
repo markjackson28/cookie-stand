@@ -6,8 +6,9 @@ body {
 
 /* body  */
 header {
-  background-color: #444;
-  height: 100px;
+  /* background-color: #444; */
+  background-color: #aaa;
+  height: 160px;
 }
 
 nav {
@@ -16,23 +17,17 @@ nav {
 }
 
 header img {
+  width: 40%;
+  height: auto;
   margin-top: 15px;
   float: left;
 }
 
-header li {
+header h1 {
   display: inline-block;
-  line-height: 100px;
-  margin-left: 90px;
-}
-
-header li:first-child {
+  margin-top: 60px;
   margin-left: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #aaa;
+  font-size: 3.5em;
 }
 
 /* main  */
@@ -96,6 +91,6 @@ article div:hover {
 /* footer  */
 footer {
   height: 125px;
-  background-color: #444;
+  background-color: #aaa;
   margin-top: 30px;
 }
