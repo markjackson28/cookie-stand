@@ -65,10 +65,25 @@ function hoursHeader() {
     th = document.createElement('th');
     th.textContent = 'Total';
     thead.appendChild(th);
-    salmonCookieTable.appendChild(thead)
+    salmonCookieTable.appendChild(thead);
 }
 
+// WIC
+// function sumFooter() {
+//   let tfoot = document.createElement('tfoot');
+//   let tr = document.createElement('tr');
+//   let td = document.createElement('td');
+//   tfoot.appendChild(tr);
+//   tr.appendChild(td);
+
+//   tfoot.textContent = 'Total';
+
+//   salmonCookieTable.appendChild(tfoot);
+
+// }
+
 hoursHeader();
+// sumFooter();
 
 new Stores('Seattle', 23, 65, 6.3)
 new Stores('Tokyo', 3, 24, 1.2)
