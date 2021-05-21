@@ -62,32 +62,32 @@ function hoursHeader() {
     th.textContent = hours[i];
     thead.appendChild(th);
   }
+
   th = document.createElement('th');
   th.textContent = 'Total';
   thead.appendChild(th);
+
   salmonCookieTable.appendChild(thead);
 }
 
-// WIP
-// function sumFooter() {
-//   let tfoot = document.createElement('tfoot');
-//   let tr = document.createElement('tr');
-//   let td = document.createElement('td');
-//   tfoot.appendChild(tr);
-//   tr.appendChild(td);
+function sumFooter() {
+  let tr = document.createElement('tr');
+  let td = document.createElement('td');
+  td.textContent = 'Total';
+  tr.appendChild(td);
 
-//   tfoot.textContent = 'Total';
 
-//   salmonCookieTable.appendChild(tfoot);
 
-// }
+  salmonCookieTable.appendChild(tr);
+}
+
+
 
 hoursHeader();
-// sumFooter();
-
 new Stores('Seattle', 23, 65, 6.3);
 new Stores('Tokyo', 3, 24, 1.2);
 new Stores('Dubai', 11, 38, 3.7);
 new Stores('Paris', 20, 38, 2.3);
 new Stores('Lima', 2, 16, 4.6);
+sumFooter();
 
