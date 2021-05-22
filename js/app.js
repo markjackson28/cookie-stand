@@ -2,6 +2,9 @@
 
 // This is the window into the DOM
 const salmonCookieTable = document.getElementById('salmonCookieTable');
+const salmonCookieTableFooter = document.querySelector('tfoot');
+// Step 1: get element into the DOM
+let cookieForm = document.getElementById('cookie-form');
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 let allStores = [];
@@ -77,6 +80,18 @@ function hoursHeader() {
   salmonCookieTable.appendChild(thead);
 }
 
+// Step 3: Define the handler
+function handleSubmit(event) {
+  event.preventDefault();
+
+  let storeName = event.target.name.value;
+  let min = +event.target.min.value;
+  let max = +event.target.max.value;
+  let average = +event.target.average.value;
+
+  new Stores(storeName, min, max, average);
+
+}
 
 function sumFooter() {
   let tr = document.createElement('tr');
@@ -99,10 +114,9 @@ function sumFooter() {
   
   td1.textContent = grandTotal;
   tr.appendChild(td1);
-  salmonCookieTable.appendChild(tr);
+  salmonCookieTableFooter.appendChild(tr);
 }
 
-console.log(colTotalsArray);
 
 hoursHeader();
 new Stores('Seattle', 23, 65, 6.3);
@@ -112,16 +126,6 @@ new Stores('Paris', 20, 38, 2.3);
 new Stores('Lima', 2, 16, 4.6);
 sumFooter();
 
-// calTotals();
+// Step 2: Add event listener 
+cookieForm.addEventListener('submit', handleSubmit);
 
-// function calTotals() {
-//   grandTotal = 0;
-//   for (let i = 0; i < hours.length; i++) {
-//     let columnTotal = 0;
-//     for (let j = 0; j < allStores.length; j++) {
-//       columnTotal += allStores[j].avgCookieSoldEachHourArray[i];
-//     }
-//     colTotalsArray.push(columnTotal);
-//     grandTotal += columnTotal;
-//   }
-// }

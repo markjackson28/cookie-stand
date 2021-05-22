@@ -4,6 +4,31 @@
   <title>Salmon Cookie Sales</title>
 </head>
 <body>
+<section>
+  <form id="cookie-form">
+    <fieldset>
+      <legend>Add Store Info</legend>
+
+      <label> Store Name
+        <input type="text" name="name">
+      </label>
+
+      <label> Min
+        <input type="number" name="min">
+      </label>
+
+      <label>Max
+        <input type="number" name="max">
+      </label>
+
+      <label>Average
+        <input type="number" step="any" name="average">
+      </label>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</section>
 
   <table id = "salmonCookieTable">
     <thead>
@@ -12,7 +37,6 @@
       </tr>
     </thead>
     <tfoot>
-      <tr></tr>
     </tfoot>
   </table>
   <a href="index.html">
