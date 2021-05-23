@@ -89,8 +89,16 @@ function handleSubmit(event) {
   let max = +event.target.max.value;
   let average = +event.target.average.value;
 
+  salmonCookieTableFooter.innerHTML = '';
+
   new Stores(storeName, min, max, average);
 
+  event.target.name.value = '';
+  event.target.min.value = '';
+  event.target.max.value = '';
+  event.target.average.value = '';
+  
+  sumFooter();
 }
 
 function sumFooter() {
@@ -116,7 +124,6 @@ function sumFooter() {
   tr.appendChild(td1);
   salmonCookieTableFooter.appendChild(tr);
 }
-
 
 hoursHeader();
 new Stores('Seattle', 23, 65, 6.3);
