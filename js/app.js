@@ -135,4 +135,3 @@ sumFooter();
 
 // Step 2: Add event listener 
 cookieForm.addEventListener('submit', handleSubmit);
-
