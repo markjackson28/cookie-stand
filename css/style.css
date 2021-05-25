@@ -6,7 +6,6 @@ body {
 
 /* body  */
 header {
-  /* background-color: #444; */
   background-color: #aaa;
   height: 160px;
 }
@@ -28,12 +27,11 @@ header h1 {
   margin-top: 50px;
   margin-left: 45px;
   font-size: 4.2em;
-  /* first google font  */
+  color: aliceblue;
   font-family: 'Lobster Two', cursive;
 }
 
 /* main  */
-
 main {
   width: 960px;
   margin: auto;
@@ -90,6 +88,7 @@ main h2 {
   margin-bottom: 5px;
   text-decoration: underline;
   font-family: 'Newsreader', serif;
+  color: blue;
   font-size: 1.5em;
 }
 
