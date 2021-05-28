@@ -2,7 +2,7 @@
 
 ## Cookie Stand
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+Built a website for a company selling salmon cookies. Also added a sales page to diplay how locations did as well as the ablilty for users to add in their own data to add to the list.
 
 ### Author: Mark Thanadabouth
 
@@ -10,7 +10,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* Any Links you used as reference
+
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
+* Pretty tough project but very well worth it.
